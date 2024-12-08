@@ -1,0 +1,95 @@
+
+body {
+    background-color: #000000; /* 검은색 배경 */
+    color: #ffffff; /* 흰색 텍스트 */
+    font-family: 'Press Start 2P', sans-serif; /* 픽셀 스타일 글꼴 */
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+
+p {
+    font-size: 16px;
+    color: #ff00cc; /* 네온 핑크 */
+    text-shadow: 0 0 3px #ff00cc, 0 0 7px #ff33ff, 0 0 20px #ff66ff;
+}
+
+/* Flickering animation;
+ inspired by O’Dwyer, S. (2021, May 25). [How to Create Neon Text With CSS]. CSS-Tricks. https://css-tricks.com/how-to-create-neon-text-with-css/*/
+ @keyframes flicker {
+    
+    0%, 85%, 100% {
+        text-shadow:
+        0 0 4px #fff,
+        0 0 12px #fff,
+        0 0 20px #fff,
+        0 0 40px #0fa,
+        0 0 80px #0fa,
+        0 0 100px #0fa,
+        0 0 120px #0fa;
+    }
+    
+    86%, 88%, 90% {        
+        text-shadow: none;
+    }
+    
+    89%, 91% {
+        text-shadow:
+        0 0 2px #fff,
+        0 0 8px #fff,
+        0 0 15px #fff,
+        0 0 30px #0fa,
+        0 0 60px #0fa,
+        0 0 75px #0fa,
+        0 0 90px #0fa;
+    }    
+}
+  
+  
+h1, h2 {
+    color: #00ffcc; /* 네온 블루 */
+    text-shadow: 0 0 10px #00ffcc, 0 0 20px #00ffcc, 0 0 30px #00ffff;
+    animation: flicker 1.5s infinite alternate;
+}
+
+/* 버튼 스타일 */
+button {
+    background-color: #ff0066; /* 네온 핑크 */
+    color: #ffffff;
+    font-family: 'Press Start 2P', sans-serif;
+    font-size: 14px;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    box-shadow: 0 0 10px #ff0066, 0 0 20px #ff3399;
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+
+button:hover {
+    transform: scale(1.15);
+    box-shadow: 0 0 15px #ff3399, 0 0 30px #ff66cc;
+}
+
+/* 링크 스타일 */
+a {
+    color: #00ffcc;
+    text-decoration: none;
+    font-weight: bold;
+    text-shadow: 0 0 10px #00ffcc, 0 0 20px #00ffcc;
+}
+
+a:hover {
+    color: #ffffff;
+    text-shadow: 0 0 15px #00ffff, 0 0 30px #00ffff;
+}
+
+/* 이미지 스타일 */
+img {
+    max-width: 100%;
+    height: auto;
+    border: 2px solid #00ffcc; /* 네온 블루 테두리 */
+    box-shadow: 0 0 10px #00ffcc, 0 0 20px #00ffff;
+    margin-top: 20px;
+}

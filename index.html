@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" href="styles.css">
+    <title>Jun's Homepage</title>
+    <style>
+        h1{
+    color: #00ffcc; /* 네온 블루 */
+    text-shadow: 0 0 10px #00ffcc, 0 0 20px #00ffcc, 0 0 30px #00ffff;
+}
+        .cat-gif {
+            position: fixed; /* 화면에 고정 */
+            bottom: 10px; /* 화면 아래에서 10px 띄움 */
+            left: 50%; /* 수평 가운데 */
+            transform: translateX(-50%); /* 가운데 정렬을 위한 보정 */
+            box-shadow: none; /* 네온 그림자 제거 */
+            border: none;
+        }
+/* 네온 바 스타일 */
+.neon-bar {
+            position: fixed;
+            top: 0;
+            width: 10px; /* 네온 바의 너비 */
+            height: 1000%; /* 화면 전체 높이 */
+            box-shadow: 0 0 20px , 0 0 35px #00ffcc; /* 네온 효과 */
+        
+            
+}
+        
+
+        /* 왼쪽 네온 바 */
+        .neon-bar-left {
+            left: 0; /* 화면의 왼쪽 */
+        }
+
+        /* 오른쪽 네온 바 */
+        .neon-bar-right {
+            right: 0; /* 화면의 오른쪽 */
+        }
+        a:hover {
+    color: #ff0066;
+    text-decoration: underline;
+    text-shadow: 0 0 10px #ff0066, 0 0 20px #ff3399;
+}
+    </style>
+   
+</head>
+<body>
+     <!-- 네온 바 -->
+<div class="neon-bar neon-bar-left"></div>
+     <div class="neon-bar neon-bar-right"></div>
+    <h1>Welcome to My Homepage</h1>
+
+<img src="me.jpg" width="200" height="100">
+
+<p>Hi My name is junmok chung and my student ID is 14637577.</p>
+ <p>I am 20 and originally from Korea</p>
+  <P>I enjoy listening to music and playing games</P>
+<p>Email me at <a href="mailto:14637577@student.uts.edu.au">14637577@student.uts.edu.au</a></p>
+<a href="favorite-place.html">Favorite Place</a> | <a href="favorite-thing.html">Favorite Thing</a>
+ <img src="cat.gif" width="100" height="100" class="cat-gif">
+</body>
+</html>
